@@ -1,7 +1,7 @@
 id: org.openwinecomponents.umu.umu-launcher
 runtime: org.freedesktop.Platform
-runtime-version: &runtime-version "25.08"
-x-gl-version: &gl-version "1.4"
+runtime-version: &runtime-version '25.08'
+x-gl-version: &gl-version '1.4'
 x-gl-versions: &gl-versions 25.08;25.08-extra;1.4
 x-gl-merge-dirs: &gl-merge-dirs vulkan/icd.d;glvnd/egl_vendor.d;OpenCL/vendors;lib/dri;lib/d3d;vulkan/explicit_layer.d;vulkan/implicit_layer.d
 sdk: org.freedesktop.Sdk
@@ -200,7 +200,7 @@ modules:
         buildsystem: simple
         build-commands:
           - pip3 install --no-index --no-build-isolation --prefix="${FLATPAK_DEST}" .
-        cleanup: ["*"]
+        cleanup: ['*']
         sources:
           - type: archive
             url: https://files.pythonhosted.org/packages/7b/b1/19587742aad604f1988a8a362e660e8c3ac03adccdb71c96d86526e5eb62/setuptools_scm-9.2.2.tar.gz
@@ -270,7 +270,7 @@ modules:
       append-path: /usr/lib/sdk/rust-stable/bin
       env:
         CARGO_HOME: /run/build/umu-run/cargo
-        CARGO_NET_OFFLINE: "true"
+        CARGO_NET_OFFLINE: 'true'
     build-commands:
       - |
         set -e
