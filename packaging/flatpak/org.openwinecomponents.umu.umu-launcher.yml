@@ -156,7 +156,8 @@ modules:
           /app/lib32
           /app/lib/i386-linux-gnu
           /lib64
-
+  
+  # These are needed for window management inside gamescope
   - name: python-flit-core # needed by idna
     buildsystem: simple
     build-commands:
